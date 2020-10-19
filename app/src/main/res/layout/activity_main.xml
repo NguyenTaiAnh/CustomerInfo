@@ -77,43 +77,35 @@
         android:layout_marginTop="10dp"
         android:gravity="center">
         <RadioGroup
+            android:id="@+id/rdo_bc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
         <RadioButton
+            android:text="Trung cấp"
+            android:textSize="18dp"
+            android:textColor="@android:color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/rdo_tc"
             />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Trung cấp"
-            android:textSize="20dp"
-            android:textColor="@android:color/black"
-            />
+
         <RadioButton
             android:id="@+id/rdo_cd"
+            android:text="Cao đẳng"
+            android:textSize="18dp"
+            android:textColor="@android:color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cao đẳng"
-            android:textSize="20dp"
-            android:textColor="@android:color/black"
-            />
+
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/rdo_dh"/>
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Đại học"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:textColor="@android:color/black"
-            />
+            android:id="@+id/rdo_dh"/>
+
         </RadioGroup>
     </LinearLayout>
     <!--  Sở thích ///////////////////////////////////-->
@@ -135,45 +127,33 @@
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
         android:gravity="center">
-        <RadioGroup
+
+
+            <CheckBox
+                android:id="@+id/cbx_db"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đọc báo "
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                />
+
+            <CheckBox
+            android:id="@+id/cbx_ds"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-        <CheckBox
-            android:id="@+id/cbx_db"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Đọc báo"
-            android:textSize="20dp"
+            android:text="Đọc sách "
+                android:textSize="18dp"
             android:textColor="@android:color/black"
-            />
-        <CheckBox
-            android:id="@+id/cb_ds"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Đọc sách"
-            android:textSize="20dp"
-            android:textColor="@android:color/black"
-            />
+
         <CheckBox
             android:id="@+id/cbx_hcode"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Đọc coding"
-            android:textSize="20dp"
+            android:text="Đọc coding "
+            android:textSize="18dp"
             android:textColor="@android:color/black"
-            />
-        </RadioGroup>
+            android:layout_height="wrap_content"/>
+
     </LinearLayout>
     <TextView
         android:layout_width="match_parent"
@@ -198,13 +178,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:hint="Hiển thị thông tin bổ sung ở đây"/>
+            android:hint=""/>
+
         <EditText
             android:id="@+id/edit_add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Thiếu gì thêm đê bạn êiiii"
-            />
+
+            android:hint="Thiếu gì thêm đê bạn êiiii" />
     </LinearLayout>
     <Button
         android:layout_marginTop="20dp"

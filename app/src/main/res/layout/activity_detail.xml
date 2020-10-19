@@ -3,14 +3,129 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@android:color/black"
+
     android:orientation="vertical"
     tools:context=".DetailInfo"
 
     >
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="hello"/>
+        android:layout_height="wrap_content"
+        android:text="THÔNG TIN"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:background="@color/bgr_info"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:padding="10dp"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hiển thị tên"
+            android:id="@+id/Show_textName"
+            android:textStyle="bold"
+            android:textSize="20dp"
 
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CMND: "
+            android:padding="10dp"
+            android:textSize="20dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hiển thị CMND"
+            android:id="@+id/Show_textCMND"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bằng cấp: "
+            android:textSize="20dp"
+
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hiển thị bằng cấp"
+            android:id="@+id/Show_rdo_bc"
+            android:textSize="20dp"
+
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sở thích: "
+            android:textSize="20dp"
+
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hiển thị sở thích"
+            android:id="@+id/Show_rdo_sothich"
+            android:textSize="20dp"
+
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THÔNG TIN KHÁC"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:background="@color/bgr_info"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="thông tin bổ sung (nếu có)"
+        android:id="@+id/Show_edit_text"
+        android:textSize="20dp"
+
+        />
 </LinearLayout>
